@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/* Обнуление первоначальных настроек стилей в браузере */
+/* Обращаемся ко всем элементам верстки */
+* {
+  /*Убираем внутренние отступы*/
+  padding: 0;
+  /*Убираем внешние отступы*/
+  margin: 0;
+  /*Убираем границы*/
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  /*Меняет подсчёт ширины блока для удобства*/
+  box-sizing: border-box;
+}
+
+/*Убираем линии обводки*/
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+/*Перечисляем некоторые тэги и добавляем им значение блочных*/
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+/*Уравниваем поведение шрифтов и элементов для разных браузеров, запрещают сомовольное увелечение шрифта*/
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/*Назначаем тэгам определенное семейство шрифта*/
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  background-image: url("../шаблон с scss/img/drum-sticks-hitting-snare-drum-with-splashing-water-on-black-background-under-stage-lighting.jpg");
+  background-size: cover;
+  color: #fff;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.keys {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.key {
+  cursor: pointer;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1.5px solid rgb(255, 140, 0);
+  padding: 10px 20px;
+  transition: all 0.1s ease 0s;
+}
+.key > *:not(:last-child) {
+  margin-bottom: 15px;
+}
+.key kbd {
+  font-size: 50px;
+}
+.key span {
+  letter-spacing: 5px;
+  color: rgb(255, 140, 0);
+}
+.key.playing {
+  box-shadow: 1px 1px 13px 6px rgb(255, 140, 0);
+  transform: scale(1.1);
+}
+.key.playing kbd {
+  color: rgb(255, 140, 0);
+}

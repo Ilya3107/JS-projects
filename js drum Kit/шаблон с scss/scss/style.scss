@@ -1,0 +1,46 @@
+@import "nullstyle.scss";
+body {
+  // <a href="https://ru.freepik.com/free-photo/_18856966.htm#query=drum&position=6&from_view=search&track=sph">Изображение от pvproductions</a> на Freepik
+  background-image: url("../шаблон с scss/img/drum-sticks-hitting-snare-drum-with-splashing-water-on-black-background-under-stage-lighting.jpg");
+  background-size: cover;
+  color: #fff;
+  min-height: 100vh;
+  width: 100vw;
+}
+.keys {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  // &>*
+}
+.key {
+  cursor: pointer;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.4);
+  border: 1.5px solid rgb(255, 140, 0);
+  padding: 10px 20px;
+  transition: all 0.1s ease 0s;
+  & > *:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  & kbd {
+    font-size: 50px;
+  }
+  & span {
+    letter-spacing: 5px;
+    color: rgb(255, 140, 0);
+  }
+  &.playing {
+    box-shadow: 1px 1px 13px 6px rgb(255, 140, 0);
+    transform: scale(1.1);
+    kbd {
+      color: rgb(255, 140, 0);
+    }
+  }
+}

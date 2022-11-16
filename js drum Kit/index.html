@@ -1,0 +1,67 @@
+<!--Сообщаем браузеру как стоит обрабатывать страницу-->
+<!DOCTYPE html>
+<!--Создаём оболочку документа и указываем язык содержимого-->
+<html lang="ru">
+  <!--Заголовок страницы, контейнер где будут содержаться важные данные, которые не отображаются-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Создаём заголоаок, который будет отображаться в браузере-->
+    <title>Знакомсто с css стилями №1 Синтаксис + Обнуление стилей</title>
+    <!--подключаем наш css файл-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--Кодировка страницы-->
+    <meta http-equiv="Content type" content="text/html;charset=UTF=8" />
+  </head>
+  <!--Тело страницы, которое отображается в браузере-->
+  <body>
+    <div class="keys">
+      <div class="key" data-key="65">
+        <kbd>A</kbd>
+        <span class="sound">clap</span>
+      </div>
+      <div class="key" data-key="83">
+        <kbd>S</kbd>
+        <span class="sound">hihat</span>
+      </div>
+      <div class="key" data-key="68">
+        <kbd>D</kbd>
+        <span class="sound">kick</span>
+      </div>
+      <div class="key" data-key="70">
+        <kbd>F</kbd>
+        <span class="sound">openhat</span>
+      </div>
+      <div class="key" data-key="71">
+        <kbd>G</kbd>
+        <span class="sound">boom</span>
+      </div>
+      <div class="key" data-key="72">
+        <kbd>H</kbd>
+        <span class="sound">ride</span>
+      </div>
+      <div class="key" data-key="74">
+        <kbd>J</kbd>
+        <span class="sound">snare</span>
+      </div>
+      <div class="key" data-key="75">
+        <kbd>K</kbd>
+        <span class="sound">tom</span>
+      </div>
+      <div class="key" data-key="76">
+        <kbd>L</kbd>
+        <span class="sound">tink</span>
+      </div>
+    </div>
+    <audio data-key="65" src="source/sounds/clap.wav"></audio>
+    <audio data-key="83" src="source/sounds/hihat.wav"></audio>
+    <audio data-key="68" src="source/sounds/kick.wav"></audio>
+    <audio data-key="70" src="source/sounds/openhat.wav"></audio>
+    <audio data-key="71" src="source/sounds/boom.wav"></audio>
+    <audio data-key="72" src="source/sounds/ride.wav"></audio>
+    <audio data-key="74" src="source/sounds/snare.wav"></audio>
+    <audio data-key="75" src="source/sounds/tom.wav"></audio>
+    <audio data-key="76" src="source/sounds/tink.wav"></audio>
+    <script src="шаблон с scss/js/script.js"></script>
+  </body>
+</html>
