@@ -1,0 +1,70 @@
+@import "nullstyle.scss";
+
+html {
+  background-image: url("../шаблон с scss/img/bg.svg");
+  background-size: cover;
+  text-align: center;
+  font-size: 10px;
+}
+body {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-direction: column;
+  flex: 1;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.clock {
+  width: 30rem;
+  height: 30rem;
+  border: 20px solid #fff;
+  border-radius: 50%;
+  // margin: 50px auto;
+  position: relative;
+  padding: 2rem;
+}
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px);
+}
+.hand {
+  width: 50%;
+  height: 4px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.09s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.clock_table {
+  width: 80rem;
+  height: 15rem;
+  border: 20px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  & span {
+    color: #fff;
+    font-size: 8rem;
+  }
+}
+.clock__section {
+  flex: 0 1 32%;
+  // height: 100%;
+
+  position: relative;
+  & span {
+    color: #fff;
+    font-size: 8rem;
+  }
+}
