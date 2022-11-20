@@ -1,0 +1,53 @@
+<!--Сообщаем браузеру как стоит обрабатывать страницу-->
+<!DOCTYPE html>
+<!--Создаём оболочку документа и указываем язык содержимого-->
+<html lang="ru">
+  <!--Заголовок страницы, контейнер где будут содержаться важные данные, которые не отображаются-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Создаём заголоаок, который будет отображаться в браузере-->
+    <title>Игра с переменными CSS и JS</title>
+    <!--подключаем наш css файл-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--Кодировка страницы-->
+    <meta http-equiv="Content type" content="text/html;charset=UTF=8" />
+  </head>
+  <!--Тело страницы, которое отображается в браузере-->
+  <body>
+    <h2>Update CSS Variables with <span class="h1">JS</span></h2>
+    <div class="controls">
+      <div class="inputs">
+        <label for="spasing"> Spacing: </label>
+        <input
+          type="range"
+          name="spacing"
+          min="10"
+          max="200"
+          value="10"
+          data-sizing="px "
+        />
+
+        <label for="blur"> Blur: </label>
+        <input
+          type="range"
+          name="blur"
+          min="0"
+          max="25"
+          value="10"
+          data-sizing="px "
+        />
+
+        <label for="base"> Base color: </label>
+        <input type="color" name="base" value="#ffc600" />
+      </div>
+      <div class="image">
+        <img
+          src="шаблон с scss/img/0e46b7cc5dfade5bf78a0c45a8014bc3.jpeg"
+          alt=""
+        />
+      </div>
+    </div>
+    <script src="шаблон с scss/js/script.js"></script>
+  </body>
+</html>
