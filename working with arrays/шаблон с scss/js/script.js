@@ -1,6 +1,6 @@
 console.log("Hello world");
 
-//working with arrays
+//working with arrays Day 1
 
 const inventors = [
   { first: "Albert", last: "Einstein", year: 1879, passed: 1955 },
